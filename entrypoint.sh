@@ -1,6 +1,7 @@
 #!/bin/bash
 
 set -eu
+set -x
 
 set_output() {
   echo "$1=$2" >> "$GITHUB_OUTPUT"
