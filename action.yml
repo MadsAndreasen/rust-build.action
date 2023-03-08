@@ -10,6 +10,9 @@ inputs:
   EXTRA_FILES:
     description: 'List of extra files to include in build'
     required: false
+  EXTRA_APKS:
+    description: 'Extra packages to install in container'
+    required: false
   SRC_DIR:
     description: 'Path to directory containing Cargo.toml (defaults to project root)'
     required: false
@@ -33,7 +36,7 @@ inputs:
     required: false
   UPLOAD_MODE:
     description: 'What method to use to upload compiled binaries, supported values: (release, none), default: release'
-    require: false
+    required: false
 outputs:
   BUILT_ARCHIVE:
     description: 'Relative path to the archive containing compiled program'
